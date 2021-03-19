@@ -1,0 +1,22 @@
+ React.useEffect(() => {
+    const unsubscribe = navigation.addListener('focus', () => {
+      async function data() {
+        try {
+          const result = await AsyncStorage.getItem('name')
+          console.log(result)
+          if (result != null) {
+            setName(result);
+          }
+          const res2 = await AsyncStorage.getItem('userToken')
+
+          if (res2 != null) {
+            console.log("Login Token :", res2);
+          }
+        } catch (e) {
+          console.log('Failed to fetch the data' + e)
+        }
+      }
+      data();
+    });
+    return unsubscribe;
+  }, [navigation]);

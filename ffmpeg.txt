@@ -1,0 +1,1 @@
+String str2[]={"-y","-i","input.mp4","-loop","1","-framerate","25","-t","3","-i","foo.jpg","-t","3","-f","lavfi","-i","aevalsrc=0","-i","bar.png","-filter_complex","\'[1:0]scale=640:480[curtain];[0:0][0:1][curtain][2:0] concat=n=2:v=1:a=1[out];[out][3:0]overlay=W-w-25:H-h-25\'","-max_muxing_queue_size","1000","output.mp4","-loglevel","\'trace\'"}; 

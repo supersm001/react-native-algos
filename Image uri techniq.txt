@@ -1,0 +1,37 @@
+####################################################################################
+require (CommonJS)
+-------------------------------------------------------------------------
+import { Image } from 'react-native';
+
+const exampleImage = require('./assets/images/example.png')
+
+<Image source={exampleImage} />
+
+
+####################################################################################
+
+import (ESModule)
+------------------------------------------------------------------
+import { Image } from 'react-native';
+
+import exampleImage from './assets/images/example.png'
+
+const exampleImageUri = Image.resolveAssetSource(exampleImage).uri
+
+<Image source={{uri: exampleImageUri}} />
+
+
+####################################################################################
+
+
+Bonus (Dynamic imports)
+----------------------------------------------------------------------------------
+I know it’s also possible for require(), but you could even use dynamic imports, like:
+
+import { Image } from 'react-native';
+
+const {default: exampleImage } = await import('./assets/images/example.png')
+
+const exampleImageUri = Image.resolveAssetSource(exampleImage).uri
+
+###################################################################################
