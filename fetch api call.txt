@@ -9,3 +9,49 @@ const getArticlesFromApi = async () => {
        console.error(error);
     }
   };
+
+
+########## create axios instance ##########
+             into axois.js 
+
+import axios from 'axios';
+export const AxiosInstance2 = axios.create({
+  baseURL: 'https://cpalead.com/dashboard/reports/',
+
+  timeout: 300000,
+});
+
+########### create api #####################
+		into apis.js
+import { AxiosInstance2 } from './Axios';
+
+export async function getOffersFromApi() {
+  try {
+    var res = await AxiosInstance2.get('campaign_json.php?id=1&geoip=user&ua=user');
+    const Offers = res.data;
+       if (Offers == res.data) {
+          return Offers;
+    }
+    else
+      return 'error';
+  } catch (e) {
+    return e;
+  }
+}
+
+
+###### the place where get api data #########
+
+import { getOffersFromApi } from './apis';
+ 
+const getData = async () => {
+    let res = await getOffersFromApi();
+
+
+    console.log(res.number_offers);
+    DATA = JSON.stringify(res.offers);
+    offers = JSON.parse(DATA);
+    //DATA = res.offers;
+    console.log(offers);
+
+  }
