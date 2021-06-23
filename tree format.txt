@@ -1,0 +1,223 @@
+const data = [
+//     {
+//         id: '1',
+//         name: 'Aman',
+//         ref: "am451",
+//         contact: "9856458525",
+//         joining: "6",
+//         earning: "300",
+//         level: "1",
+//         children: [
+//             {
+//                 id: '6',
+//                 name: 'Monu',
+//                 ref: "mo531",
+//                 contact: "9856484525",
+//                 joining: "8",
+//                 earning: "400",
+//                 level: "1",
+//                 children: [
+//                     {
+//                         id: '16',
+//                         name: 'Anshuman',
+//                         ref: "an551",
+//                         contact: "9856474125",
+//                         joining: "8",
+//                         earning: "400",
+//                         level: "1",
+//                     },
+//                     {
+//                         id: '17',
+//                         name: 'Vinayak',
+//                         ref: "vi671",
+//                         contact: "9853694525",
+//                         joining: "1",
+//                         earning: "50",
+//                         level: "1",
+//                     },
+//                 ],
+//             },
+//         ],
+//     },
+//     {
+//         id: '2',
+//         name: 'Kartik',
+//         ref: "ka452",
+//         contact: "9885698525",
+//         joining: "6",
+//         earning: "300",
+//         level: "1",
+//         children: [
+//             {
+//                 id: '8',
+//                 name: 'Naman',
+//                 ref: "na571",
+//                 contact: "9856432125",
+//                 joining: "8",
+//                 earning: "400",
+//                 level: "1",
+//                 children: [
+//                     {
+//                         id: '19',
+//                         name: 'Ayush',
+//                         ref: "ay557",
+//                         contact: "9855469125",
+//                         joining: "8",
+//                         earning: "400",
+//                         level: "1",
+//                     },
+//                     {
+//                         id: '21',
+//                         name: 'Ramesh',
+//                         ref: "ra681",
+//                         contact: "9853564525",
+//                         joining: "1",
+//                         earning: "50",
+//                         level: "1",
+//                     },
+//                 ],
+//             },
+//         ],
+//     },
+//     {
+//         id: '3',
+//         name: 'Roshan',
+//         ref: "ro452",
+//         contact: "9863968525",
+//         joining: "6",
+//         earning: "300",
+//         level: "1",
+//         children: [
+//             {
+//                 id: '11',
+//                 name: 'Ravi',
+//                 ref: "ra452",
+//                 contact: "9885698525",
+//                 joining: "6",
+//                 earning: "300",
+//                 level: "1",
+//                 children: [
+//                     {
+//                         id: '31',
+//                         name: 'Avitesh',
+//                         ref: "av452",
+//                         contact: "9885741225",
+//                         joining: "6",
+//                         earning: "300",
+//                         level: "1",
+//                         children: [
+//                             {
+//                                 id: '51',
+//                                 name: 'Naveen',
+//                                 ref: "na452",
+//                                 contact: "9885697852",
+//                                 joining: "6",
+//                                 earning: "300",
+//                                 level: "1",
+//                             }
+//                         ]
+//                     }
+//                 ]
+//             },
+//             {
+//                 id: '2',
+//                 name: 'Gotam',
+//                 ref: "go452",
+//                 contact: "9995698525",
+//                 joining: "6",
+//                 earning: "300",
+//                 level: "1",
+//                 children: [
+//                     {
+//                         id: '13',
+//                         name: 'Hitesh',
+//                         ref: "hi452",
+//                         contact: "9885688825",
+//                         joining: "6",
+//                         earning: "300",
+//                         level: "1",
+//                     }
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         id: '4',
+//         name: 'Jay',
+//         ref: "ja452",
+//         contact: "9777698525",
+//         joining: "6",
+//         earning: "300",
+//         level: "1",
+//         children: [
+//             {
+//                 id: '5',
+//                 name: 'Karan',
+//                 ref: "ka452",
+//                 contact: "9885888525",
+//                 joining: "6",
+//                 earning: "300",
+//                 level: "1",
+//                 children: [
+//                     {
+//                         id: '23',
+//                         name: 'Monika',
+//                         ref: "mo452",
+//                         contact: "9885698888",
+//                         joining: "6",
+//                         earning: "300",
+//                         level: "1",
+//                     }
+//                 ]
+//             },
+//             {
+//                 id: '17',
+//                 name: 'Yash',
+//                 ref: "ya452",
+//                 contact: "9885555525",
+//                 joining: "6",
+//                 earning: "300",
+//                 level: "1",
+//                 children: [
+//                     {
+//                         id: '34',
+//                         name: 'Inder',
+//                         ref: "in452",
+//                         contact: "9885698665",
+//                         joining: "6",
+//                         earning: "300",
+//                         level: "1",
+//                     },
+//                     {
+//                         id: '35',
+//                         name: 'Lakshya',
+//                         ref: "la452",
+//                         contact: "9545698525",
+//                         joining: "6",
+//                         earning: "300",
+//                         level: "1",
+//                     },
+//                     {
+//                         id: '36',
+//                         name: 'Poonam',
+//                         ref: "po452",
+//                         contact: "9852698525",
+//                         joining: "6",
+//                         earning: "300",
+//                         level: "1",
+//                         children: [
+//                             {
+//                                 id: '52',
+//                                 name: 'Ravina',
+//                                 ref: "ra452",
+//                                 contact: "9885698525",
+//                                 joining: "6",
+//                                 earning: "300",
+//                                 level: "1",
+//                             }
+//                         ]
+//                     }
+//                 ]
+//             }
+//         ]
+//     }
