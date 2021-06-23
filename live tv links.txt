@@ -1,0 +1,13 @@
+ajtak news
+
+https://feeds.intoday.in/livetv/?id=livetv-at&amp;aud_togle=1&amp;autostart=1&amp;utm_medium=web&amp;utm_source=live_tv_page&amp;v=1.4
+
+
+
+abp news
+
+https://cdn.abplive.com/LiveStreams/260118/abplive/streaming.html
+
+znews
+
+https://zeenews.india.com/live-tv/embed#autoplay
