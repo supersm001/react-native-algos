@@ -1,0 +1,12 @@
+Generate a set of APKs from your app bundle
+
+When bundletool generates APKs from your app bundle, it includes them in a container called an APK set archive, which uses the .apks file extension. To generate an APK set for all device configurations your app supports from your app bundle, use the bundletool build-apks command, as shown below.
+
+	
+	bundletool build-apks --bundle=/MyApp/my_app.aab --output=/MyApp/my_app.apks
+
+
+If you want to deploy the APKs to a device, you need to also include your app’s signing information, as shown in the command below. If you do not specify signing information, bundletool attempts to sign your APKs with a debug key for you.
+
+
+	bundletool build-apks --bundle=/MyApp/my_app.aab --output=/MyApp/my_app.apks --ks=/MyApp/keystore.jks --ks-pass=file:/MyApp/keystore.pwd --ks-key-alias=MyKeyAlias --key-pass=file:/MyApp/key.pwd
