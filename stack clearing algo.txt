@@ -1,0 +1,9 @@
+import { CommonActions } from '@react-navigation/native';
+
+const handleSigninNavigation = () => {
+ navigation.dispatch(
+  CommonActions.reset({
+    index: 0,
+    routes: [{ name: "your-new-route" }]
+  }));
+}
