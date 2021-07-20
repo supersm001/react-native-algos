@@ -1,0 +1,20 @@
+function BananaComponent() {
+
+  const [bananas, setBananas] = React.useState([])
+  
+  React.useEffect(() => {
+    let isSubscribed = true
+    fetchBananas().then( bananas => {
+      if (isSubscribed) {
+        setBananas(bananas)
+      }
+    })
+    return () => isSubscribed = false
+  }, []);
+
+  return (
+    <ul>
+    {bananas.map(banana => <li>{banana}</li>)}
+    </ul>
+  )
+}
