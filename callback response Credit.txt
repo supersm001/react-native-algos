@@ -1,0 +1,15 @@
+{
+"payment_id":"MOJO1903J05D30661686",
+"status":"Credit",
+"shorturl":"https://imjo.in/mnAFq4",
+"longurl":"https://www.instamojo.com/@luckybazar/2c6de021527f4ca696cf7d8cdc867474",
+"purpose":"Add Wallet",
+"amount":"13.90",
+"fees":"3.30",
+"currency":"INR",
+"buyer":"sanjay@gmail.com",
+"buyer_name":"sanjay mandal",
+"buyer_phone":"+919582345889",
+"payment_request_id":"2c6de021527f4ca696cf7d8cdc867474",
+"mac":"eb91a06d33d2f06f28ffb3b343ef3c8c64b9eb89"
+}
