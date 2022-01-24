@@ -1,0 +1,7 @@
+as I found out that you may find the missing vulkan-1.dll at Visual Studio Code's following folder path:
+
+C:\Users\{your_username}\AppData\Local\Programs\Microsoft VS Code\
+So, if you have Microsoft Visual Studio Code installed, you may find the vulkan-1.dll at the above-quoted path. From here, just copy the vulkan-1.dll file, and paste that in folder:
+
+C:\Users\{your_username}\AppData\Local\Android\Sdk\emulator\lib64\
+After pasting the file, restart Android Studio and rerun the emulator/AVD.
