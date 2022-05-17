@@ -1,0 +1,20 @@
+1. magical-money App
+App Platform : Android
+link : https://play.google.com/store/apps/details?id=com.adpot&hl=en_IN
+
+2. BrandMaker App
+App Platform : Android
+
+3. LuckyBajar App with Backend Admin Panel
+App Platform : Android
+Admin Panel Platform : node js
+link : https://play.google.com/store/apps/details?id=com.joymall&hl=en_IN
+
+4. UpLoans App (Dnet)
+App Platform : Android
+
+5. ServiceOnWay App
+App Platform : Android
+
+6. Some Little Contributions in these : DCMoney,SOS,TopGear
+Platform : Android
