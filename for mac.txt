@@ -1,0 +1,26 @@
+brew install opencv@2
+brew unlink opencv@2 
+brew link --overwrite opencv@2 --force
+PKG_CONFIG_PATH="/usr/local/Cellar/opencv@2/2.4.13.2_2/lib/pkgconfig/"
+rm -rf node_modules
+npm install opencv
+
+
+
+These commands worked like a charm for me on Ubuntu:
+
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+sudo npm install --unsafe-perm=true --allow-root
+
+
+npm unistall bcrypt
+
+npm install bcryptjs
+
+import bcrypt from 'bcryptjs';
+
+
+
+sudo npm install -g node-gyp
